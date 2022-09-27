@@ -147,7 +147,6 @@ class UseProfile extends GambitCommand {
   Task<Either<CommandFailure, XCBuildConfiguration>> _selectProvisioningProfile(
           Unit _) =>
       Task<Either<CommandFailure, XCBuildConfiguration>>(() async {
-        late String provisioningProfileName;
         try {
           final releaseBuildConfiguration =
               pbxproj.releaseBuildConfigurations.first;
